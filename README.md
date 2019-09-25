@@ -38,4 +38,4 @@ Now that you have a hello-world Flask app working, we can build a slightly more 
 * `export FLASK_APP=routes.py`
 * `flask run --host=0.0.0.0`
 
-Now you'll have a little more involved webapp. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
+Reload your web browser with the same link you used before. You should see a page with a couple of links and buttons on it. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
