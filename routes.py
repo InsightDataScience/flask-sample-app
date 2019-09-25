@@ -8,7 +8,7 @@ def home():
 
 # About page
 @app.route('/about')
-def about_page():
+def about():
     return render_template("about.html")
 
 # Route that accepts a username(string) and returns it. You can use something similar
