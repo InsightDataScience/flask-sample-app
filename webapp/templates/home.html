@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <h1> My First Try Using Flask </h1>
+    <p> Flask is Fun. <span id="additional_text" style="display:none;"> Or maybe not!! </span> </p>
+    <button type="button" class="btn btn-primary" id="btn-hide-text">Hide Text</button>
+    <button type="button" class="btn btn-secondary" id="btn-show-text">Show Text</button>
+    {% endblock %}
+  </body>
+</html>
