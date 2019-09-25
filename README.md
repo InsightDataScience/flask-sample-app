@@ -2,7 +2,7 @@
 This repo is to help you in setting up a simple Flask app. Use this to understand the elements of a Flask app. This document contains of the following sections:
 1. [Installation](#installation)
 2. [Quickstart](#quickstart-hello-world)
-3. [Simple FLASK_APP](#-a-simple-flask_app)
+3. [Simple FLASK_APP](#a-simple-flask_app)
 
 ### Installation
 The installation steps are mentioned below. All these are based on this [page](https://flask.palletsprojects.com/en/1.1.x/installation/#create-an-environment).
