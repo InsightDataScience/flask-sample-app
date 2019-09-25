@@ -5,6 +5,8 @@ This repo is to help you in setting up a simple Flask app. Use this to understan
 3. [Simple FLASK_APP](#a-simple-flask_app)
 
 ### Installation
+It's recommended to do this on a new EC2 instance. So do spin up a new one if you don't have one yet.
+
 The installation steps are mentioned below. All these are based on this [page](https://flask.palletsprojects.com/en/1.1.x/installation/#create-an-environment).
 
 * Clone this Github repo
