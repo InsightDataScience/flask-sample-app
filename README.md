@@ -39,3 +39,6 @@ Now that you have a hello-world Flask app working, we can build a slightly more 
 * `flask run --host=0.0.0.0`
 
 Reload your web browser with the same link you used before. You should see a page with a couple of links and buttons on it. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
+
+Once you have this app working, take time to understand how a webapp works. Essentially there are 2 parts:
+* **client-code**:
