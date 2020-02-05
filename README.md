@@ -15,6 +15,7 @@ The installation steps are mentioned below. All these are based on this [page](h
 * Access repo folder. Create Python Virtual Environment
   * `cd flask-sample-app`
   * `python3 -m venv venv`
+    * If you are seeing an error, you may have to run `python3 -m venv venv --without-pip`
 
 * Activate Environment
   * `. venv/bin/activate`
@@ -40,5 +41,33 @@ Now that you have a hello-world Flask app working, we can build a slightly more 
 
 Reload your web browser with the same link you used before. You should see a page with a couple of links and buttons on it. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
 
-Once you have this app working, take time to understand how a webapp works. Essentially there are 2 parts:
-* **client-code**:
+### A simple FLASK_APP **(port 80)**
+Now we will want to run Flask app on port 80 - the default HTTP port that's accessed for any webpage request.
+
+** This method should NOT be used in any other production environment. This is only a quick way to have your Flask app running on port 80 **
+
+* Switch to user `su`
+  * `sudo su - `
+
+* Go to previous folder
+  * `cd /home/ubuntu/repo/flask-sample-app`
+
+* `python3 -m venv venv`
+  * If you are seeing an error, you may have to run `python3 -m venv venv --without-pip`
+
+* Activate Environment
+  * `. venv/bin/activate`
+
+* Install flask. Previous install was done for user `ubuntu`. Now we'll have to do same for user `su`.
+  * `pip install Flask`
+
+* `export FLASK_APP=routes_port80.py`
+
+* Run Flask app in background. This should
+  * `nohup flask run --host=0.0.0.0 --port=80 &`
+
+### Web-page client-server model
+
+Once you have this app working, take time to understand how a webapp works. Here's a good [intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works). Essentially there are 2 parts:
+* **client-code**: Everything that's related to a webpage that appears in a web browser. In this case, client-code roughly includes everything in folders `static`, and `templates`.
+* **server-code**: Flask server that "serves" webpages. In this case, both files `hello.py`, `routes.py`, and `routes_port80.py` are server-code.
