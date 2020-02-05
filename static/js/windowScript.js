@@ -5,7 +5,7 @@ $(document).ready(function() {
       var userName = $('#user_name').val(),
           uri = "/user/" + userName;
       $.get(uri, function(data, status) {
-        console.log('blah 1 ' + JSON.stringify(data));
+        console.log('Printing on browser: ' + JSON.stringify(data));
       });
     });
 });

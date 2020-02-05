@@ -75,3 +75,13 @@ Once you have this app working, take time to understand how a webapp works. Here
 * **server-code**: Flask server that "serves" webpages. In this case, both files `hello.py`, `routes.py`, and `routes_port80.py` are server-code.
 
 `client` makes requests that are served by routes in server-code.
+
+Type some text in the textarea you see in the page. Click button 'Use Route'. You should see text printed on browser's [console](https://developers.google.com/web/tools/chrome-devtools/console).
+
+The following happened when you clicked button 'Use Route':
+* (client) In JavaScript file `windowScript`, user-input is stored in variable `userName`. This value is sent to server.
+* (server) In file `routes_port80`, user-input is received in variable `username` (line 17).
+* (server) The same `username)` is returned with "User" prefixed.
+* (client) Back in JavaScript file `windowScript`, the new string is received in variable `data`. This is printed on the console.
+
+The above steps demonstrates a very simple example of how data is sent between client and server. This should give you an idea of a simple webapp now.
