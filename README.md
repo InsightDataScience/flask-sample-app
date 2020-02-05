@@ -71,17 +71,23 @@ Now we will run Flask app on port 80 - the default HTTP port for any webpage req
 ### Intro to Web: client-server model
 
 Once you have this app working, take time to understand how a webapp works. Here's a good [intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) on how web works. Essentially there are 2 parts:
-* **client-code**: Everything that's related to a webpage that appears in a web browser. In this case, client-code roughly includes everything in folders `static`, and `templates`.
-* **server-code**: Flask server that "serves" webpages. In this case, both files `hello.py`, `routes.py`, and `routes_port80.py` are server-code.
+* **client-code**: Everything that's related to a webpage that appears in a web browser. In this case, client-code includes everything in folders `static`, and `templates`.
+  * `templates` has only HTML source code.
+  * `static` has all JavaScript and CSS code that's used by pages by `templates`.
+* **server-code**: Flask server that "serves" webpages. In this case, files `hello.py`, `routes.py`, and `routes_port80.py` represents server-code.
 
-`client` makes requests that are served by routes in server-code.
+`client-code` makes requests that are **served** by routes in `server-code`. Hence the name web-server.
 
-Type some text in the textarea you see in the page. Click button 'Use Route'. You should see text printed on browser's [console](https://developers.google.com/web/tools/chrome-devtools/console).
+To see how client-server model works, we'll use the webpage to understand it better. Type some text in the textarea you see in the home-page. Click button 'Use Route'. You should see text printed on browser's [console](https://developers.google.com/web/tools/chrome-devtools/console).
 
 The following happened when you clicked button 'Use Route':
 * `(client)` In JavaScript file `windowScript`, user-input is stored in variable `userName`. This value is sent to server.
 * `(server)` In file `routes_port80`, user-input is received in variable `username` (line 17).
+  * you should the user-input in file `nohup.out`. In short, what you typed in the webpage has appeared in Flask server!
 * `(server)` The same `username` is returned with "User" prefixed.
+  * this operation is done by route `/user/<username>`.
 * `(client)` Back in JavaScript file `windowScript`, the new string is received in variable `data`. This is printed on the console.
 
 The above steps demonstrates a very simple example of how data is sent between client and server. This should give you an idea of a simple webapp now.
+
+###
