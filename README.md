@@ -4,7 +4,7 @@ This repo is to help you in setting up a simple Flask app. Use this to understan
 2. [Quickstart](#quickstart-hello-world)
 3. [Simple FLASK_APP](#a-simple-flask_app)
 4. [Simple FLASK_APP on port 80](#a-simple-flask_app-port-80)
-5. [Intro to Web: Client-Server](#web-page-client-server-model)
+5. [Intro to Web: Client-Server](#intro-to-web-client-server-model)
 
 ### Installation
 It's recommended to do this on a new EC2 instance. So do spin up a new one if you don't have one yet.
@@ -44,9 +44,9 @@ Now that you have a hello-world Flask app working, we can build a slightly more 
 Reload your web browser with the same link you used before. You should see a page with a couple of links and buttons on it. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
 
 ### A simple FLASK_APP (port 80)
-Now we will want to run Flask app on port 80 - the default HTTP port that's accessed for any webpage request.
+Now we will run Flask app on port 80 - the default HTTP port for any webpage request.
 
-** This method should NOT be used in any other production environment. This is only a quick way to have your Flask app running on port 80 **
+**WARNING: This method should NOT be used in any other production environment. This is only a quick way to have your Flask app running on port 80 for Insight Project**
 
 * Switch to user `su`
   * `sudo su - `

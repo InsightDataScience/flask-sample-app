@@ -21,7 +21,7 @@ def show_user_profile(username):
 @app.route('/userwithslash/<username>/')
 def show_user_profile_withslash(username):
     # show the user profile for that user
-    return 'User %s' % escape(username)
+    return 'User With Slash %s' % escape(username)
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
