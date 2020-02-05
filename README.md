@@ -67,7 +67,7 @@ Now we will run Flask app on port 80 - the default HTTP port for any webpage req
 
 * Run Flask app in background. This should
   * `nohup flask run --host=0.0.0.0 --port=80 &`
-    * ensure to copy `&` from the above command. This takes Flask app to the background. (Read more)[https://www.lifewire.com/multitasking-background-foreground-process-2180219]
+    * ensure to copy `&` from the above command. This takes Flask app to the background. [Read more](https://www.lifewire.com/multitasking-background-foreground-process-2180219)
   * check the file `nohup.out` for any errors.
 
 ### Intro to Web: client-server model
