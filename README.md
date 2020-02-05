@@ -52,7 +52,7 @@ Now we will run Flask app on port 80 - the default HTTP port for any webpage req
   * `sudo su - `
 
 * Go to previous folder
-  * `cd /home/ubuntu/repo/flask-sample-app`
+  * `cd flask-sample-app`
 
 * `python3 -m venv venv`
   * If you are seeing an error, you may have to run `python3 -m venv venv --without-pip`
@@ -67,6 +67,8 @@ Now we will run Flask app on port 80 - the default HTTP port for any webpage req
 
 * Run Flask app in background. This should
   * `nohup flask run --host=0.0.0.0 --port=80 &`
+    * ensure to copy `&` from the above command. This takes Flask app to the background. (Read more)[https://www.lifewire.com/multitasking-background-foreground-process-2180219]
+  * check the file `nohup.out` for any errors.
 
 ### Intro to Web: client-server model
 
@@ -83,11 +85,9 @@ To see how client-server model works, we'll use the webpage to understand it bet
 The following happened when you clicked button 'Use Route':
 * `(client)` In JavaScript file `windowScript`, user-input is stored in variable `userName`. This value is sent to server.
 * `(server)` In file `routes_port80`, user-input is received in variable `username` (line 17).
-  * you should the user-input in file `nohup.out`. In short, what you typed in the webpage has appeared in Flask server!
+  * you should the user-input in flask-server file `nohup.out`. In short, what you typed in the webpage has appeared in Flask server!
 * `(server)` The same `username` is returned with "User" prefixed.
   * this operation is done by route `/user/<username>`.
 * `(client)` Back in JavaScript file `windowScript`, the new string is received in variable `data`. This is printed on the console.
 
 The above steps demonstrates a very simple example of how data is sent between client and server. This should give you an idea of a simple webapp now.
-
-###
