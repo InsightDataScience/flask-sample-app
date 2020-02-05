@@ -4,7 +4,7 @@ This repo is to help you in setting up a simple Flask app. Use this to understan
 2. [Quickstart](#quickstart-hello-world)
 3. [Simple FLASK_APP](#a-simple-flask_app)
 4. [Simple FLASK_APP on port 80](#a-simple-flask_app-port-80)
-5. [Intro to Web](#web-page-client-server-model)
+5. [Intro to Web: Client-Server](#web-page-client-server-model)
 
 ### Installation
 It's recommended to do this on a new EC2 instance. So do spin up a new one if you don't have one yet.
@@ -68,7 +68,7 @@ Now we will want to run Flask app on port 80 - the default HTTP port that's acce
 * Run Flask app in background. This should
   * `nohup flask run --host=0.0.0.0 --port=80 &`
 
-### Web-page client-server model
+### Intro to Web: client-server model
 
 Once you have this app working, take time to understand how a webapp works. Here's a good [intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) on how web works. Essentially there are 2 parts:
 * **client-code**: Everything that's related to a webpage that appears in a web browser. In this case, client-code roughly includes everything in folders `static`, and `templates`.
