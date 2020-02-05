@@ -3,6 +3,8 @@ This repo is to help you in setting up a simple Flask app. Use this to understan
 1. [Installation](#installation)
 2. [Quickstart](#quickstart-hello-world)
 3. [Simple FLASK_APP](#a-simple-flask_app)
+4. [Simple FLASK_APP on port 80](#a-simple-flask_app-port-80)
+5. [Intro to Web](#web-page-client-server-model)
 
 ### Installation
 It's recommended to do this on a new EC2 instance. So do spin up a new one if you don't have one yet.
@@ -41,7 +43,7 @@ Now that you have a hello-world Flask app working, we can build a slightly more 
 
 Reload your web browser with the same link you used before. You should see a page with a couple of links and buttons on it. This should demonstrate on how to use CSS and JS files that's associated with a webapp.
 
-### A simple FLASK_APP **(port 80)**
+### A simple FLASK_APP (port 80)
 Now we will want to run Flask app on port 80 - the default HTTP port that's accessed for any webpage request.
 
 ** This method should NOT be used in any other production environment. This is only a quick way to have your Flask app running on port 80 **
@@ -68,6 +70,8 @@ Now we will want to run Flask app on port 80 - the default HTTP port that's acce
 
 ### Web-page client-server model
 
-Once you have this app working, take time to understand how a webapp works. Here's a good [intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works). Essentially there are 2 parts:
+Once you have this app working, take time to understand how a webapp works. Here's a good [intro](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) on how web works. Essentially there are 2 parts:
 * **client-code**: Everything that's related to a webpage that appears in a web browser. In this case, client-code roughly includes everything in folders `static`, and `templates`.
 * **server-code**: Flask server that "serves" webpages. In this case, both files `hello.py`, `routes.py`, and `routes_port80.py` are server-code.
+
+`client` makes requests that are served by routes in server-code.
